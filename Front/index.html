@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries API</title>
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <main>
+
+        <h1 id="site-title">Countries API</h1>
+
+        <form class="flex column">
+            <input id="text" type="text" placeholder="Enter a country">
+
+            <div class="margin-top flex-row">
+                <label class="margin-right">Choose by:</label>
+                <input name="radio" id="country" class="margin-right radio" type="radio" value="country" data-hint="Enter a country" checked>
+                <label for="country">Country</label>
+                <input name="radio" id="capital" class="margin-right radio" type="radio" value="capital" data-hint="Enter a capital">
+                <label for="capital">Capital</label>
+            </div>
+
+            <div class="margin-top flex-row">
+                <label class="margin-right" for="region">See countries by region:</label>
+                <input list="regions" name="region" id="region">
+                <datalist id="regions">
+                    <option value="Africa"></option>
+                    <option value="Americas"></option>
+                    <option value="Asia"></option>
+                    <option value="Europe"></option>
+                    <option value="Oceania"></option>
+                </datalist>
+                <button class="btn" id="browser" type="button">Browse</button>
+
+            </div>
+            
+            <button class="btn" id="btnShowData" type="button">SHOW DATA</button>
+            <button id="btnReset" type="button" href="index.html">reset</button>
+        </form>
+    
+        <div class="column flex">
+            <ul class="data countryInfo flex">
+
+            </ul>
+        </div>
+
+    </main>
+
+
+
+    <!--JS FILES-->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
